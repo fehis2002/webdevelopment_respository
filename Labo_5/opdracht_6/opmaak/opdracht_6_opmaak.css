@@ -20,13 +20,13 @@ p {
 }
 
 .red {
-    -webkit-text-fill-color: red;
+    color: red;
 }
 
 .blue {
-    -webkit-text-fill-color: blue;
+    color: blue;
 }
 
 .green {
-    -webkit-text-fill-color: green;
+    color: green;
 }
