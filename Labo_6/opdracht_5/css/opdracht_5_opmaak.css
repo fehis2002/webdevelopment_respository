@@ -19,5 +19,11 @@ a:hover {
 }
 
 a:before {
-    background-image: url("../images/wolk_icon.png");
+    background-image: url('../images/wolk_icon.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    content: "";
 }
