@@ -1,0 +1,39 @@
+html {
+    font-family: Helvetica;
+}
+
+h1 {
+    font-size: 80px;
+    color: #EDF2F4;
+}
+
+h2 {
+    font-size: 40px;
+    color: #EDF2F4;
+}
+
+a {
+    color: #EF233C;
+}
+
+
+header, footer {
+    background-color: #2B2D42;
+    padding: 30px;
+    color: #8D99AE;
+}
+header {
+    margin-bottom: 10px;
+}
+section {
+    background-color: #8D99AE;
+    padding: 30px;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+footer > h2 {
+    color: #8D99AE;
+}

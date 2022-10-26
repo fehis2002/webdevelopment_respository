@@ -1,0 +1,23 @@
+body {
+    font-family: Verdana;
+    font-size: 1.1em;
+    background-image: url("../images/wolken.jpg");
+    color: darkblue;
+}
+
+h1 {
+    font-variant: all-small-caps;
+    background-color: red;
+}
+
+a:hover {
+    border: 2px solid red;
+}
+
+.stippeltjesrand {
+    border: 1px dotted black;
+}
+
+a:before {
+    background-image: url("../images/wolk_icon.png");
+}
