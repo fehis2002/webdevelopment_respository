@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+</head>
+<body>
+<div class="datagrid">
+    <table>
+        <thead>
+        <tr>
+            <th>Voornaam</th>
+            <th>Familienaam</th>
+            <th>Postcode</th>
+            <th>School</th>
+            <th>Opleiding</th>
+            <th>Jaar</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Tim</td>
+            <td>Vannieuwen</td>
+            <td>1000</td>
+            <td>VUB</td>
+            <td class="onbekend"></td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>Tom</td>
+            <td>VanOuden</td>
+            <td>1000</td>
+            <td>Ugent</td>
+            <td>Psychologie</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Joran</td>
+            <td>Huys</td>
+            <td>8000</td>
+            <td>Howest Brugge</td>
+            <td>Verpleegkunde</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>Thomas</td>
+            <td>Vanplancken</td>
+            <td class="onbekend"></td>
+            <td>Vives Roeselare</td>
+            <td>Autotechnologie</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Tam</td>
+            <td>Muys</td>
+            <td>8860</td>
+            <td>Vives Kortrijk</td>
+            <td>Bedrijfsmanagement</td>
+            <td>3</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<section>
+    <h2>Antwoorden op vragen</h2>
+    <p>
+        In de onderstaande afbeelding van het css code die gegenereerd wordt krijgt<br />
+        het rij met de class "alt" een ander achtergrondkleur. De reden waarom de velden <br />
+        die onbekend zijn geen rode achtergrond hebben, is omdat de specificiteit van de klasse <br />
+        alt is groter dan de specificeit van de klasse onbekend. Namelijk alt heeft een<br />
+        specificiteit van 023 en onbekend heeft een specificiteit van 010. Dit zie je onderaaan <br />
+        in de laatste afbeeldingen.
+    </p>
+    <img src="images/screenshot%20css%20code.png" alt="css code"><br />
+    <img src="images/specificiteit%20van%20alt.png" alt="specificiteit van klasse alt">
+    <img src="images/specificiteit%20van%20onbekend.png" alt="specificiteit van klasse onbekend">
+</section>
+</body>
+</html>
