@@ -1,0 +1,37 @@
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+thead > tr > th {
+    background-color:rgb(170,170,200);
+}
+
+thead> tr:nth-child(2){
+    background-color: rgb(35,37,70);
+    color: rgb(200,190,240);
+}
+
+tbody > tr > td:first-of-type, tbody > tr > td:last-of-type{
+    background-color: rgb(255, 220, 220);
+}
+
+tbody > tr:first-child > td:first-child, tbody > tr:last-child > td:nth-last-of-type(-n+3){
+    background-color: grey;
+}
+
+tbody > tr > td {
+    border: 1px dotted black;
+}
+
+tbody > tr:first-child > td:nth-child(5), tbody > tr:first-child > td:nth-child(6),
+tbody > tr:nth-child(2) > td:nth-child(4), tbody > tr:nth-child(2) > td:nth-child(5),
+tbody > tr:nth-child(3) > td:nth-child(2), tbody > tr:nth-child(3) > td:nth-child(6),
+tbody > tr:nth-child(4) > td:nth-child(3), tbody > tr:nth-child(4) > td:nth-child(5) {
+    text-decoration: underline;
+    color: blue;
+}
+
+tbody > tr:nth-child(3) > td:nth-child(3) {
+    background-color: rgb(250,120,120);
+}
