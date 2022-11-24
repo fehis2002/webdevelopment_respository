@@ -1,0 +1,20 @@
+section {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    border: 1px solid black;
+}
+
+#linkerdiv > section{
+    float: left;
+}
+#rechterdiv > section {
+    float: right;
+}
+#rechterdiv {
+    margin-left: 10px;
+}
+
+#linkerdiv {
+    margin-right: 10px;
+}
