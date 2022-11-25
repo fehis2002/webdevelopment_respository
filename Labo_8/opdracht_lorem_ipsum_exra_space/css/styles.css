@@ -1,14 +1,14 @@
-section {
+article {
     display: inline-block;
     box-sizing: border-box;
     width: 50%;
     border: 1px solid black;
 }
 
-#linkerdiv > section{
+#linkerdiv > article{
     float: left;
 }
-#rechterdiv > section {
+#rechterdiv > article {
     float: right;
 }
 #rechterdiv {
