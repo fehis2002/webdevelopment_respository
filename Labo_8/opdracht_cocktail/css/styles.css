@@ -1,0 +1,84 @@
+header, nav, footer, article {
+    display: block;
+}
+
+h1, h2 {
+    color: #007e7e;
+}
+
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 130%;
+}
+
+body {
+    font-family: Verdana, Helvetica, Arial;
+    font-size: 1.2em;
+}
+
+p#guarantee {
+    margin: 30px;
+    padding: 20px;
+    color: #444444;
+    background-color: #a7cece;
+    border: white 1px dotted;
+    font-style: italic;
+}
+
+div#container {
+    width: 95%;
+    margin: auto;
+}
+
+div#content {
+    width: 70%;
+    float: left;
+}
+
+div#sidebar {
+    width: 30%;
+    float: right;
+    background-image: url("../images/cocktail.gif");
+    height: 78px;
+    text-align: center;
+}
+
+div#content > section {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+div#sidebar > article {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: 10px;
+}
+div#sidebar > article > h1 {
+    color: black;
+}
+div#sidebar > article> h2 {
+    color: #8b1616;
+}
+
+a,a:hover,a:link{
+    color: #444444;
+}
+
+header {
+    margin: auto;
+    text-align: center;
+}
+
+div#sidebar > article  a:hover {
+    background-color: saddlebrown;
+}
+
+footer {
+    clear: both;
+    font-size: 50%;
+    text-align: center;
+}
