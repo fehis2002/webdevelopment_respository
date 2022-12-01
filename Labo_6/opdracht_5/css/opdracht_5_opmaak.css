@@ -21,3 +21,17 @@ a:hover {
 a:before {
     content: url("../images/wolk_icon.png");
 }
+
+div#gallery > div.foto > img{
+    height: 180px;
+    width: 180px;
+}
+
+div#gallery {
+    background-color: #999999;
+}
+
+div#gallery > div.foto {
+    background-color: white;
+    border: 1px white dotted;
+}
