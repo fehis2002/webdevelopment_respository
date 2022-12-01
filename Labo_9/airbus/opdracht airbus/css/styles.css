@@ -27,6 +27,7 @@ header > img{
 header > p:first-child {
     font-size: 300%;
     font-style: italic;
+    margin-top: 0;
 }
 
 header> p:nth-child(2) {
@@ -106,6 +107,10 @@ nav {
     background-color: #666666;
     color: white;
     line-height: 2em;
+}
+
+nav > ul:first-child {
+    margin-top: 0;
 }
 
 footer > nav {
