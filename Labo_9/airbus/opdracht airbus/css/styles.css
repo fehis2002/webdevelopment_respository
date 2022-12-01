@@ -117,7 +117,7 @@ footer > nav {
     padding-left: 120px;
 }
 
-div#bottom a:hover {
+nav a:hover {
     color: red;
 }
 
