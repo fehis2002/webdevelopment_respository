@@ -38,12 +38,20 @@ figcaption {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 	}
+
+	body {
+		background-color: #5c8b57;
+	}
 }
 
 @media screen and (min-width: 768px)  {
 	div {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	body {
+		background-color: #585a8b;
 	}
 }
 
