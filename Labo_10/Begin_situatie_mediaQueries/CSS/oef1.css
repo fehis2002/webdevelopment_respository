@@ -42,12 +42,20 @@ figcaption {
 	body {
 		background-color: #5c8b57;
 	}
+
+	div > figure {
+		margin: 10px 10px;
+	}
 }
 
 @media screen and (min-width: 768px)  {
 	div {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	div > figure {
+		margin: 10px 10px;
 	}
 
 	body {
@@ -59,5 +67,9 @@ figcaption {
 	figure {
 		display: grid;
 		grid-template-columns: 1fr;
+	}
+
+	div > figure {
+		margin: 10px 10px;
 	}
 }
