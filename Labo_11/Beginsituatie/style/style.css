@@ -10,6 +10,12 @@ section div {
 
 /* specific item styles */
 
+section {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+}
 .item-1 {
     background: #b03532;
 }
@@ -38,4 +44,57 @@ section div {
     background: #4464a1;
 }
 
+@media screen and (max-width: 759px) {
+    section {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas:
+            "item9 item2"
+            "item4 item5"
+            "item7 item8"
+            "item3 .";
+    }
+
+    .item-1 {
+        background: #b03532;
+        grid-area: item1;
+        display: none;
+    }
+    .item-2 {
+        background: #33a8a5;
+        grid-area: item2;
+    }
+    .item-3 {
+        background: #30997a;
+        grid-area: item3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .item-4 {
+        background: #6a478f;
+        grid-area: item4;
+    }
+    .item-5 {
+        background: #da6f2b;
+        grid-area: item5;
+    }
+    .item-6 {
+        background: #3d8bb1;
+        grid-area: item6;
+        display: none;
+    }
+    .item-7 {
+        background: #e03f3f;
+        grid-area: item7;
+    }
+    .item-8 {
+        background: #59a627;
+        grid-area: item8;
+    }
+    .item-9 {
+        background: #4464a1;
+        grid-area: item9
+    }
+
+}
 
