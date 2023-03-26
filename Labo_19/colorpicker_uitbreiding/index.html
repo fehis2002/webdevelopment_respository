@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>ColorPicker</title>
+</head>
+<body>
+    <div>
+    <div id="colorPicker">
+        <div class="components">
+            <table>
+                <tr>
+                    <td><p>0</p></td>
+                    <td><input type="range" min="0" max="255" class="slider"/></td>
+                    <td><p>255</p></td>
+                    <td><p class="colorValue">Red</p></td>
+                </tr>
+                <tr>
+                    <td><p>0</p></td>
+                    <td><input type="range" min="0" max="255" class="slider"/></td>
+                    <td><p>255</p></td>
+                    <td><p class="colorValue">Green</p></td>
+                </tr>
+                <tr>
+                    <td><p>0</p></td>
+                    <td><input type="range" min="0" max="255" class="slider"/></td>
+                    <td><p>255</p></td>
+                    <td><p class="colorValue">Blue</p></td>
+                </tr>
+            </table>
+        </div>
+        <div id="square"></div>
+        <input type="button" value="Save" id="knop">
+    </div>
+    </div>
+    <script src="scripts/code.js"></script>
+</body>
+</html>

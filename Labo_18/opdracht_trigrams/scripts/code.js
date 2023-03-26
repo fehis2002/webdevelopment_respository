@@ -1,5 +1,4 @@
 const setup = () => {
-
     trigram();
 }
 
