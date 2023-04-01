@@ -1,0 +1,32 @@
+#spel {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.card > img {
+    width: 100px;
+    height: 250px;
+    display: none;
+}
+
+body {
+    background-color: black;
+}
+
+@media screen and (max-width: 950px) {
+    #spel {
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 2px;
+        grid-row-gap: 25px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #spel {
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 25px;
+    }
+}
+
