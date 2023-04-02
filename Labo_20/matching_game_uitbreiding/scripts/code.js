@@ -15,13 +15,14 @@ const global = {
         'one_piece_soundtrack4'],
     soundtrackIndex: 0,
     currentSoundtrack: '',
+    audio: false
 };
 
 const setup = () => {
     document.body.style.backgroundColor = '#FFDB58';
     document.getElementById('spel').style.display = 'block';
     global.currentSoundtrack = new Audio(`audios/${global.SOUNDTRACKS[global.soundtrackIndex]}.mp3`);
-    displayAudioOption()
+    displayAudioOption();
     global.currentSoundtrack.addEventListener('ended', () => {
         nextSong();
     })
@@ -91,7 +92,11 @@ const generateMusicLayout = () => {
     div.style.textAlign = 'center';
     volgende.style.display = 'inline-block';
     pauze.style.display = 'inline-block';
-    vorige.style.display = 'none';
+    if(global.soundtrackIndex === 0) {
+        vorige.style.display = 'none';
+    } else {
+        vorige.style.display = 'inline-block';
+    }
     for(let button of document.querySelectorAll('#musicOptions > input')) {
         button.style.marginRight = '10px';
 
@@ -123,10 +128,11 @@ const displayAudioOption = () => {
         generateGameLayout();
         generateMusicLayout();
         addCards();
+        global.audio = true;
     });
     weiger.addEventListener('click', () => {
-        generateGameLayout()
-        addCards()
+        generateGameLayout();
+        addCards();
     });
 }
 
@@ -336,8 +342,10 @@ const restartGame = () => {
         'kaart1', 'kaart2', 'kaart3', 'kaart4', 'kaart5', 'kaart6',
         'kaart1', 'kaart2', 'kaart3', 'kaart4', 'kaart5', 'kaart6'];
     generateGameLayout();
-    generateMusicLayout();
     addCards();
+    if(global.audio) {
+        generateMusicLayout();
+    }
 }
 
 window.addEventListener("load", setup);
