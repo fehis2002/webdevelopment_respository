@@ -133,7 +133,7 @@ const displayAudioOption = () => {
 //speelt soundtrack af
 const playSoundtrack = () => {
     global.currentSoundtrack.play();
-    global.currentSoundtrack.volume = 0.015;
+    global.currentSoundtrack.volume = 0.2;
 }
 
 
@@ -336,6 +336,7 @@ const restartGame = () => {
         'kaart1', 'kaart2', 'kaart3', 'kaart4', 'kaart5', 'kaart6',
         'kaart1', 'kaart2', 'kaart3', 'kaart4', 'kaart5', 'kaart6'];
     generateGameLayout();
+    generateMusicLayout();
     addCards();
 }
 
