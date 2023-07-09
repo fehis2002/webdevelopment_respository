@@ -22,6 +22,14 @@ const setup = () => {
 
 const genereerKasTicket = () => {
 
+    //kasticket opmaken
+    let kasticket = document.getElementById('kasticket');
+    kasticket.style.marginTop = '10px';
+    kasticket.style.textAlign = 'center';
+    kasticket.style.border = '3px dotted black';
+    kasticket.style.width = '300px';
+
+
     let totaleKostprijs = 0;
 
     //header van de kasticket op pagina laten weergeven
@@ -70,7 +78,7 @@ const printEndOfKasticket = bedrag => {
     //div opvragen
     let kasticket = document.getElementById('kasticket');
 
-    //elementen en textnode opmaken
+    //elementen en textnode definiëren
     let lijnText = document.createTextNode('------------------------------');
     let lijn = document.createElement('h3');
     let br = document.createElement('br');
@@ -83,6 +91,7 @@ const printEndOfKasticket = bedrag => {
     kasticket.appendChild(lijn);
     kasticket.appendChild(br);
     kasticket.appendChild(totaal);
+
 }
 
 window.addEventListener("load", setup);
